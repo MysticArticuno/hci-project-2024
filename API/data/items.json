@@ -1,0 +1,40 @@
+[
+    {
+        "name": "Burger",
+        "category": "Burgers",
+        "modifiers": [
+            "Temp:Medium",
+            "Variable:Regular:Pickles",
+            "Variable:Regular:Tomato",
+            "Variable:Regular:Onion",
+            "Variable:Regular:Lettuce",
+            "Variable:Regular:Ketchup",
+            "Variable:Regular:Mustard",
+            "Variable:Regular:Cheese",
+            "Variable:Regular:Mayo",
+            "Other:No Top Bun"
+        ]
+    },
+    {
+        "name": "Fries",
+        "category": "Sides",
+        "modifiers": [
+            "Variable:Regular:Salt"
+        ]
+    },
+    {
+        "name": "Chicken_Sandwich",
+        "category": "Sandwiches",
+        "modifiers": [
+            "Variable:Regular:Pickles",
+            "Variable:Regular:Tomato",
+            "Variable:Regular:Onion",
+            "Variable:Regular:Lettuce",
+            "Variable:Regular:Ketchup",
+            "Variable:Regular:Mustard",
+            "Variable:Regular:Cheese",
+            "Variable:Regular:Mayo",
+            "Other:No Top Bun"
+        ]
+    }
+]

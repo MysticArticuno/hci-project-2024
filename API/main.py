@@ -31,11 +31,19 @@ def route_tickets_table(table_number):
 
 @app.get("/items")
 def route_items():
-    return OrderItemDataAccess.get_all_order_items()
+    return OrderItemDataAccess.get_all_order_items_list()
+
+@app.get("/categories")
+def route_categories():
+    return OrderItemDataAccess.get_all_categories()
 
 @app.get("/items/<item_name>")
 def route_items_itemname(item_name):
-    return OrderItemDataAccess.getOrderItemByName(item_name)
+    item = OrderItemDataAccess.get_order_item_mods_by_name(item_name)
+    if item == None:
+        abort(400)
+    else:
+        return item
 
 @app.get("/archive")
 def route_archive():

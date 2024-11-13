@@ -1,4 +1,4 @@
-import datetime
+import datetime, json
 from flask import jsonify
 from model import Ticket
 
@@ -62,11 +62,34 @@ class TicketDataAccess:
             
 class OrderItemDataAccess:
 
-        @staticmethod
-        def get_order_item_by_name(name):
-            pass
+        _ITEM_JSON_LOCATION = "data/items.json"
+        _CATEGORY_JSON_LOCATION = "data/categories.json"
 
         @staticmethod
-        def get_all_order_items():
-            pass
+        def _get_obj_from_json(name):
+            with open(OrderItemDataAccess._ITEM_JSON_LOCATION) as f:
+                data = json.load(f)
+                for item in data:
+                    if item["name"] == name:
+                        return item
+
+        @staticmethod
+        def get_order_item_mods_by_name(name):
+            item = OrderItemDataAccess._get_obj_from_json(name)
+            return item
+
+        @staticmethod
+        def get_all_categories():
+            with open(OrderItemDataAccess._CATEGORY_JSON_LOCATION) as f:
+                data = json.load(f)
+                return data
+
+        @staticmethod
+        def get_all_order_items_list():
+            with open(OrderItemDataAccess._ITEM_JSON_LOCATION) as f:
+                data = json.load(f)
+                items = []
+                for item in data:
+                    items.append(item["name"])
+                return items
 

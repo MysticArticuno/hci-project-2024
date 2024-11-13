@@ -28,4 +28,5 @@ class Ticket:
     #     }
 
 class OrderItem:
-    pass
+    def __init__(self):
+        pass

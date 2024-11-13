@@ -1,9 +1,11 @@
 
 h6 {
     color: #8A99AF;
+    margin: 3px;
 }
 
 body {
+    top: 0px;
     margin: 0px;
     background-color: #F1F5F9;
 }
@@ -12,15 +14,15 @@ body {
 .topbar {
     position: fixed;
     top: 0;
-    left: 290px;
+    left: 250px;
     width: calc(100% - 250px); /* Full width minus sidebar width */
-    height: 60px; /* Height of the topbar */
+    height: 58px; /* Height of the topbar */
     background-color: white;
-    display: flex;
     align-items: center; /* Vertically center text */
-    padding: 0 20px; /* Some horizontal padding */
     z-index: 1000; /* Make sure the topbar is above other content */
     margin: 0px;
+    border-bottom: 2px solid #00000020;
+    
   }
   
   /* Container for the header texts */
@@ -82,4 +84,54 @@ body {
     bottom: 10px;
     width: 100%;
     text-align: center;
+  }
+
+  #main-view {
+    position: absolute;
+    width: calc(100% - 250px);
+    height: calc(100vh - 60px);
+    top: 60px;
+    left: 250px;
+    text-align: center;
+  }
+
+  #control-buttons {
+    height: 60px;
+    margin: 10px;
+  }
+
+  .control-button {
+    height: 50px;
+    width: 50px;
+  }
+
+  #done-button {
+    width: 400px;
+    margin: 0px 20px;
+  }
+
+  #items p{
+    color: white;
+    margin: 2px;
+  }
+
+  #ticket-box {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* Ticket Styling */
+
+  .ticket {
+    height: 80%; /* 80% of container's height */
+    width: 20%;  /* 20% of container's width */
+    margin: 0 2%; /* 5% gap between ticket divs, 2.5% on each side */
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #00000020;
+    border-radius: 16px;
   }
