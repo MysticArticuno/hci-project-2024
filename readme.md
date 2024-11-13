@@ -10,7 +10,6 @@ To begin, please clone the repository using the command `git clone https://githu
 
 ### Python API
 
-[!IMPORTANT]
 Ensure you have a working version of Python on your system. To check if you do, run the command `python --version`. If this returns text similar to `Python 3.12.7`, then Python is installed
 
 [!NOTE]
