@@ -19,11 +19,21 @@ def route_tickets():
 
 @app.get("/tickets/<ticket_id>")
 def route_tickets_ticketid(ticket_id):
+    pos = request.args.get("position")
+    print(pos)
     return_ticket = ticket_data_access.get_ticket_by_id(ticket_id)
     if return_ticket == None:
         abort(400)
     else:
         return return_ticket.__dict__, 200
+
+# @app.get("/tickets/<ticket_id>")
+# def route_tickets_ticketid(ticket_id):
+#     return_ticket = ticket_data_access.get_ticket_by_id(ticket_id)
+#     if return_ticket == None:
+#         abort(400)
+#     else:
+#         return return_ticket.__dict__, 200
 
 @app.get("/tickets/table/<table_number>")
 def route_tickets_table(table_number):

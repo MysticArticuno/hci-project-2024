@@ -18,6 +18,13 @@ class TicketDataAccess:
             return None
 
         @staticmethod
+        def get__filtered_ticket_by_id(id, station):
+            for t in TicketDataAccess._tickets:
+                if int(t.ticket_id) == int(id):
+                    return t
+            return None
+
+        @staticmethod
         def get_all_tickets():
             return_tickets = []
             for t in TicketDataAccess._tickets:
