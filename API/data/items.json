@@ -1,40 +1,152 @@
 [
     {
-        "name": "Burger",
-        "category": "Burgers",
+        "name": "Loaded Street Fries",
+        "category": "apps",
+        "positions": ["fry","apps"],
         "modifiers": [
-            "Temp:Medium",
-            "Variable:Regular:Pickles",
-            "Variable:Regular:Tomato",
-            "Variable:Regular:Onion",
-            "Variable:Regular:Lettuce",
-            "Variable:Regular:Ketchup",
-            "Variable:Regular:Mustard",
-            "Variable:Regular:Cheese",
-            "Variable:Regular:Mayo",
-            "Other:No Top Bun"
+            "Garlic Parmesan",
+            "Herbs",
+            "House Sauce",
+            "w/ Ranch"
+        ]
+    },
+    {
+        "name": "Sweet and Spicy Nuggets",
+        "category": "apps",
+        "positions": ["apps", "fry", "oven"],
+        "modifiers": [
+            "Honey Chipotle Glaze",
+            "w/ Ranch"
+        ]
+    },
+    {
+        "name": "Mac and Cheese Bites",
+        "category": "apps",
+        "positions": ["apps", "oven"],
+        "modifiers": [
+            "w/ Ranch"
+        ]
+    },
+    {
+        "name": "Wings",
+        "category": "apps",
+        "positions": ["apps", "fry", "oven"],
+        "modifiers": [
+            "Garlic Parmesan",
+            "w/ Ranch"
+        ]
+    },
+    {
+        "name": "Truffle Mayo Burger",
+        "category": "burgers",
+        "positions": ["grill"],
+        "modifiers": [
+            "Caramelized Onions",
+            "Truffle Aioli"
+        ]
+    },
+    {
+        "name": "Honey Butter Chicken Sandwich",
+        "category": "sandwiches",
+        "positions": ["grill", "fry"],
+        "modifiers": [
+            "Honey Butter",
+            "Pickle Slaw"
+        ]
+    },
+    {
+        "name": "Parmesan Garlic Chicken Sandwich",
+        "category": "sandwiches",
+        "positions": ["grill", "fry"],
+        "modifiers": [
+            "Garlic Butter"
+        ]
+    },
+    {
+        "name": "Classic Deluxe Burger",
+        "category": "burgers",
+        "positions": ["grill"],
+        "modifiers": [
+            "American Cheese",
+            "Secret Sauce"
+        ]
+    },
+    {
+        "name": "Chipoltle Ranch Chicken Sandwich",
+        "category": "sandwiches",
+        "positions": ["grill", "fry"],
+        "modifiers": [
+            "Chipotle Ranch",
+            "Pickled Onion"
         ]
     },
     {
         "name": "Fries",
-        "category": "Sides",
+        "category": "sides",
+        "positions": ["fry"],
         "modifiers": [
-            "Variable:Regular:Salt"
+            "Salt"
         ]
     },
     {
-        "name": "Chicken_Sandwich",
-        "category": "Sandwiches",
+        "name": "Curly Fries",
+        "category": "sides",
+        "positions": ["fry"],
         "modifiers": [
-            "Variable:Regular:Pickles",
-            "Variable:Regular:Tomato",
-            "Variable:Regular:Onion",
-            "Variable:Regular:Lettuce",
-            "Variable:Regular:Ketchup",
-            "Variable:Regular:Mustard",
-            "Variable:Regular:Cheese",
-            "Variable:Regular:Mayo",
-            "Other:No Top Bun"
+            "Salt"
         ]
+    },
+    {
+        "name": "Sweet Potato Fries",
+        "category": "sides",
+        "positions": ["fry"],
+        "modifiers": [
+            "Salt"
+        ]
+    },
+    {
+        "name": "Onion Rings",
+        "category": "sides",
+        "positions": ["fry"],
+        "modifiers": []
+    },
+    {
+        "name": "Side Salad",
+        "category": "sides",
+        "positions": ["expo"],
+        "modifiers": [
+            "w/ Ranch",
+            "w/ Balsamic"
+        ]
+    },
+    {
+        "name": "Mac and Cheese",
+        "category": "sides",
+        "positions": ["oven"],
+        "modifiers": []
+    },
+    {
+        "name": "Coleslaw",
+        "category": "sides",
+        "positions": ["expo"],
+        "modifiers": []
+    },
+    {
+        "name": "Ranch",
+        "category": "extra",
+        "positions": ["expo"],
+        "modifiers": []
+    },
+    {
+        "name": "Honey Mustard",
+        "category": "extra",
+        "positions": ["expo"],
+        "modifiers": []
+    },
+    {
+        "name": "Ketchup",
+        "category": "extra",
+        "positions": ["expo"],
+        "modifiers": []
     }
 ]
